@@ -15,6 +15,9 @@ document.querySelector('.check').addEventListener('click', function () {
   } else if (guess === randomNumber) {
     document.querySelector('.message').textContent = '🥳 Correct number!';
 
+    document.querySelector('body').style.backgroundColor = '#6ECB63';
+    document.querySelector('.number').style.width = '30rem';
+
     // When guess is too high
   } else if (guess > randomNumber) {
     if (score > 1) {
